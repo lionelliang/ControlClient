@@ -1,0 +1,9 @@
+c:\users\administrator\documents\visual studio 2013\Projects\ControlClient\ControlClient\bin\Debug\ControlClient.exe.config
+c:\users\administrator\documents\visual studio 2013\Projects\ControlClient\ControlClient\bin\Debug\ControlClient.exe
+c:\users\administrator\documents\visual studio 2013\Projects\ControlClient\ControlClient\bin\Debug\ControlClient.pdb
+c:\users\administrator\documents\visual studio 2013\Projects\ControlClient\ControlClient\obj\Debug\ControlClient.csprojResolveAssemblyReference.cache
+c:\users\administrator\documents\visual studio 2013\Projects\ControlClient\ControlClient\obj\Debug\ControlClient.MaxAPMControlClient.resources
+c:\users\administrator\documents\visual studio 2013\Projects\ControlClient\ControlClient\obj\Debug\ControlClient.Properties.Resources.resources
+c:\users\administrator\documents\visual studio 2013\Projects\ControlClient\ControlClient\obj\Debug\ControlClient.csproj.GenerateResource.Cache
+c:\users\administrator\documents\visual studio 2013\Projects\ControlClient\ControlClient\obj\Debug\ControlClient.exe
+c:\users\administrator\documents\visual studio 2013\Projects\ControlClient\ControlClient\obj\Debug\ControlClient.pdb
