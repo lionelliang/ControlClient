@@ -21,7 +21,14 @@ namespace ControlClient
             InitializeComponent();
             this.DoBindDataSource();
             this.s = SocketsConnection.ConnectServer("127.0.0.1", 12004);
-            tbMsg.Text = "Server connected";
+            if (this.s == null)
+            {
+                tbMsg.Text = "Connection failed";
+            }
+            else
+            {
+                tbMsg.Text = "Server connected";
+            }
             //tbmsg.Text = "lslkdjf\r\nlskdjf\r\nsdkjfk";
         }
 
@@ -34,7 +41,7 @@ namespace ControlClient
                 return;
             }
             byte[] buffer = System.Text.Encoding.Default.GetBytes(str);
-            if (this.s == null)
+            if (this.s == null || this.s.Connected == false)
             {
                 tbMsg.Text = "Connection losed";
                 return;
@@ -57,7 +64,7 @@ namespace ControlClient
             }
 
             byte[] buffer = System.Text.Encoding.Default.GetBytes(str);
-            if (this.s == null)
+            if (this.s == null || this.s.Connected == false)
             {
                 tbMsg.Text = "Connection losed";
                 return;
@@ -107,7 +114,7 @@ namespace ControlClient
             str += cbbLog4J.SelectedValue;
 
             byte[] buffer = System.Text.Encoding.Default.GetBytes(str);
-            if (this.s == null)
+            if (this.s == null || this.s.Connected == false)
             {
                 tbMsg.Text = "Connection losed";
                 return;
@@ -125,7 +132,7 @@ namespace ControlClient
                 return;
             }
             byte[] buffer = System.Text.Encoding.Default.GetBytes(str);
-            if (this.s == null)
+            if (this.s == null || this.s.Connected == false)
             {
                 tbMsg.Text = "Connection losed";
                 return;
@@ -148,7 +155,7 @@ namespace ControlClient
             }
 
             byte[] buffer = System.Text.Encoding.Default.GetBytes(str);
-            if (this.s == null)
+            if (this.s == null || this.s.Connected == false)
             {
                 tbMsg.Text = "Connection losed";
                 return;
