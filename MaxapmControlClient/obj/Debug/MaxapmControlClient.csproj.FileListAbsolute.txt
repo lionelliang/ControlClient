@@ -1,0 +1,11 @@
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\ControlClient\MaxapmControlClient\bin\Debug\MaxapmControlClient.exe.config
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\ControlClient\MaxapmControlClient\bin\Debug\MaxapmControlClient.exe
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\ControlClient\MaxapmControlClient\bin\Debug\MaxapmControlClient.pdb
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\ControlClient\MaxapmControlClient\obj\Debug\MaxapmControlClient.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\ControlClient\MaxapmControlClient\obj\Debug\MaxapmControlClient.Form1.resources
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\ControlClient\MaxapmControlClient\obj\Debug\MaxapmControlClient.Properties.Resources.resources
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\ControlClient\MaxapmControlClient\obj\Debug\MaxapmControlClient.WindowsClient.resources
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\ControlClient\MaxapmControlClient\obj\Debug\MaxapmControlClient.WindowsServer.resources
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\ControlClient\MaxapmControlClient\obj\Debug\MaxapmControlClient.csproj.GenerateResource.Cache
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\ControlClient\MaxapmControlClient\obj\Debug\MaxapmControlClient.exe
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\ControlClient\MaxapmControlClient\obj\Debug\MaxapmControlClient.pdb

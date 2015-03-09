@@ -1,0 +1,10 @@
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\ControlClient\MaxapmControlClient\bin\Release\MaxapmControlClient.exe.config
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\ControlClient\MaxapmControlClient\bin\Release\MaxapmControlClient.exe
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\ControlClient\MaxapmControlClient\bin\Release\MaxapmControlClient.pdb
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\ControlClient\MaxapmControlClient\obj\Release\MaxapmControlClient.Form1.resources
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\ControlClient\MaxapmControlClient\obj\Release\MaxapmControlClient.Properties.Resources.resources
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\ControlClient\MaxapmControlClient\obj\Release\MaxapmControlClient.WindowsClient.resources
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\ControlClient\MaxapmControlClient\obj\Release\MaxapmControlClient.WindowsServer.resources
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\ControlClient\MaxapmControlClient\obj\Release\MaxapmControlClient.csproj.GenerateResource.Cache
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\ControlClient\MaxapmControlClient\obj\Release\MaxapmControlClient.exe
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\ControlClient\MaxapmControlClient\obj\Release\MaxapmControlClient.pdb
