@@ -35,17 +35,14 @@ namespace MaxapmControlClient
         {
             try
             {
-                //创建IP地址
                 IPAddress address = IPAddress.Parse(tbIp.Text.Trim());
-                //创建IP节点(包含IP和端口)
                 IPEndPoint endpoint = new IPEndPoint(address, int.Parse(tbPort.Text.Trim()));
-                //创建监听套接字(寻址协议，流方式，TCP协议)
                 sokWelcome = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
                 sokWelcome.Bind(endpoint);
-                sokWelcome.Listen(100);//参数：指能同时处理的连接数
+                sokWelcome.Listen(100);
                 threadWatchPort = new Thread(WatchPort);
                 threadWatchPort.Start();
-                tbMsg.Text += "\nstart listening on " + tbIp.Text.Trim() + " " + tbPort.Text.Trim();
+                tbMsg.Text += "\r\nstart listening on " + tbIp.Text.Trim() + " " + tbPort.Text.Trim();
             }
             catch (Exception e)
             {
@@ -62,7 +59,7 @@ namespace MaxapmControlClient
             {
                 if (sokWelcome == null)
                 {
-                    tbMsg.Text = "Connection losed";
+                    tbMsg.Text = "Connection lost";
                     break;
                 }
                 try
@@ -88,9 +85,9 @@ namespace MaxapmControlClient
                                 tbMsg.AppendText(string.Format("Exception：{0}", ex.Message));
                                 break;
                             }
-                            tbMsg.AppendText(string.Format("Message：{0}", Encoding.UTF8.GetString(data)));
-                            string sendMsg = "get the message";
-                            sokConnection.Send(Encoding.UTF8.GetBytes(sendMsg));
+                            tbMsg.AppendText(Encoding.UTF8.GetString(data));
+                            //string sendMsg = "get the message";
+                            //sokConnection.Send(Encoding.UTF8.GetBytes(sendMsg));
                         }
                     }).Start();
                 }
@@ -114,7 +111,7 @@ namespace MaxapmControlClient
         //    byte[] buffer = System.Text.Encoding.Default.GetBytes(str);
         //    if (this.s == null || this.s.Connected == false)
         //    {
-        //        tbMsg.Text = "Connection losed";
+        //        tbMsg.Text = "Connection lost";
         //        return;
         //    }
         //    SocketsConnection.SendData(this.s, buffer, -1);
