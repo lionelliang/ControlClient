@@ -8,3 +8,5 @@ C:\Users\Administrator\Documents\Visual Studio 2013\Projects\ControlClient\Maxap
 C:\Users\Administrator\Documents\Visual Studio 2013\Projects\ControlClient\MaxapmControlClient\obj\Release\MaxapmControlClient.csproj.GenerateResource.Cache
 C:\Users\Administrator\Documents\Visual Studio 2013\Projects\ControlClient\MaxapmControlClient\obj\Release\MaxapmControlClient.exe
 C:\Users\Administrator\Documents\Visual Studio 2013\Projects\ControlClient\MaxapmControlClient\obj\Release\MaxapmControlClient.pdb
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\ControlClient\MaxapmControlClient\obj\Release\MaxapmControlClient.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\ControlClient\MaxapmControlClient\obj\Release\MaxapmControlClient.WindowsThreadDump.resources

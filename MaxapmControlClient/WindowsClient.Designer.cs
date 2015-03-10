@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblconnect = new System.Windows.Forms.Label();
             this.tbIp = new System.Windows.Forms.TextBox();
             this.btnLog4J = new System.Windows.Forms.Button();
             this.ckbCss = new System.Windows.Forms.CheckBox();
@@ -48,16 +48,21 @@
             this.lblIp = new System.Windows.Forms.Label();
             this.lblPort = new System.Windows.Forms.Label();
             this.btnConnect = new System.Windows.Forms.Button();
+            this.btnDisconnect = new System.Windows.Forms.Button();
+            this.btnClear = new System.Windows.Forms.Button();
+            this.btnSend = new System.Windows.Forms.Button();
+            this.tbMsgSend = new System.Windows.Forms.TextBox();
+            this.lblSend = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // label1
+            // lblconnect
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(45, 26);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(65, 12);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Connect to";
+            this.lblconnect.AutoSize = true;
+            this.lblconnect.Location = new System.Drawing.Point(45, 26);
+            this.lblconnect.Name = "lblconnect";
+            this.lblconnect.Size = new System.Drawing.Size(65, 12);
+            this.lblconnect.TabIndex = 0;
+            this.lblconnect.Text = "Connect to";
             // 
             // tbIp
             // 
@@ -75,6 +80,7 @@
             this.btnLog4J.TabIndex = 28;
             this.btnLog4J.Text = "Change";
             this.btnLog4J.UseVisualStyleBackColor = true;
+            this.btnLog4J.Click += new System.EventHandler(this.btnVar_Click);
             // 
             // ckbCss
             // 
@@ -85,6 +91,7 @@
             this.ckbCss.TabIndex = 27;
             this.ckbCss.Text = "Catch";
             this.ckbCss.UseVisualStyleBackColor = true;
+            this.ckbCss.CheckedChanged += new System.EventHandler(this.ckbCss_CheckedChanged);
             // 
             // btnException
             // 
@@ -94,6 +101,7 @@
             this.btnException.TabIndex = 26;
             this.btnException.Text = "Cut";
             this.btnException.UseVisualStyleBackColor = true;
+            this.btnException.Click += new System.EventHandler(this.btnException_Click);
             // 
             // tbException
             // 
@@ -121,12 +129,15 @@
             this.ckbVar.TabIndex = 23;
             this.ckbVar.Text = "Bind";
             this.ckbVar.UseVisualStyleBackColor = true;
+            this.ckbVar.CheckedChanged += new System.EventHandler(this.ckbVar_CheckedChanged);
             // 
             // tbMsg
             // 
-            this.tbMsg.Location = new System.Drawing.Point(47, 292);
+            this.tbMsg.Location = new System.Drawing.Point(47, 282);
+            this.tbMsg.Multiline = true;
             this.tbMsg.Name = "tbMsg";
-            this.tbMsg.Size = new System.Drawing.Size(110, 21);
+            this.tbMsg.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.tbMsg.Size = new System.Drawing.Size(312, 120);
             this.tbMsg.TabIndex = 22;
             // 
             // lblCss
@@ -182,6 +193,7 @@
             this.btnSQL.TabIndex = 16;
             this.btnSQL.Text = "Cut";
             this.btnSQL.UseVisualStyleBackColor = true;
+            this.btnSQL.Click += new System.EventHandler(this.btnSQL_Click);
             // 
             // tbSQL
             // 
@@ -197,7 +209,7 @@
             this.tbPort.Name = "tbPort";
             this.tbPort.Size = new System.Drawing.Size(100, 21);
             this.tbPort.TabIndex = 30;
-            this.tbPort.Text = "12005";
+            this.tbPort.Text = "12004";
             // 
             // lblIp
             // 
@@ -225,11 +237,63 @@
             this.btnConnect.TabIndex = 33;
             this.btnConnect.Text = "Connect";
             this.btnConnect.UseVisualStyleBackColor = true;
+            this.btnConnect.Click += new System.EventHandler(this.btnConnect_Click);
+            // 
+            // btnDisconnect
+            // 
+            this.btnDisconnect.Location = new System.Drawing.Point(284, 44);
+            this.btnDisconnect.Name = "btnDisconnect";
+            this.btnDisconnect.Size = new System.Drawing.Size(75, 23);
+            this.btnDisconnect.TabIndex = 34;
+            this.btnDisconnect.Text = "Disconnect";
+            this.btnDisconnect.UseVisualStyleBackColor = true;
+            this.btnDisconnect.Click += new System.EventHandler(this.btnDisconnect_Click);
+            // 
+            // btnClear
+            // 
+            this.btnClear.Location = new System.Drawing.Point(392, 379);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(75, 23);
+            this.btnClear.TabIndex = 35;
+            this.btnClear.Text = "Clear";
+            this.btnClear.UseVisualStyleBackColor = true;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
+            // 
+            // btnSend
+            // 
+            this.btnSend.Location = new System.Drawing.Point(392, 428);
+            this.btnSend.Name = "btnSend";
+            this.btnSend.Size = new System.Drawing.Size(75, 23);
+            this.btnSend.TabIndex = 47;
+            this.btnSend.Text = "Send";
+            this.btnSend.UseVisualStyleBackColor = true;
+            this.btnSend.Click += new System.EventHandler(this.btnSend_Click);
+            // 
+            // tbMsgSend
+            // 
+            this.tbMsgSend.Location = new System.Drawing.Point(104, 428);
+            this.tbMsgSend.Name = "tbMsgSend";
+            this.tbMsgSend.Size = new System.Drawing.Size(255, 21);
+            this.tbMsgSend.TabIndex = 46;
+            // 
+            // lblSend
+            // 
+            this.lblSend.AutoSize = true;
+            this.lblSend.Location = new System.Drawing.Point(21, 428);
+            this.lblSend.Name = "lblSend";
+            this.lblSend.Size = new System.Drawing.Size(77, 12);
+            this.lblSend.TabIndex = 45;
+            this.lblSend.Text = "Send Message";
             // 
             // WindowsClient
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.btnSend);
+            this.Controls.Add(this.tbMsgSend);
+            this.Controls.Add(this.lblSend);
+            this.Controls.Add(this.btnClear);
+            this.Controls.Add(this.btnDisconnect);
             this.Controls.Add(this.btnConnect);
             this.Controls.Add(this.lblPort);
             this.Controls.Add(this.lblIp);
@@ -249,9 +313,9 @@
             this.Controls.Add(this.lblSQL);
             this.Controls.Add(this.btnSQL);
             this.Controls.Add(this.tbSQL);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblconnect);
             this.Name = "WindowsClient";
-            this.Size = new System.Drawing.Size(413, 349);
+            this.Size = new System.Drawing.Size(488, 458);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -259,7 +323,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblconnect;
         private System.Windows.Forms.TextBox tbIp;
         private System.Windows.Forms.Button btnLog4J;
         private System.Windows.Forms.CheckBox ckbCss;
@@ -279,5 +343,10 @@
         private System.Windows.Forms.Label lblIp;
         private System.Windows.Forms.Label lblPort;
         private System.Windows.Forms.Button btnConnect;
+        private System.Windows.Forms.Button btnDisconnect;
+        private System.Windows.Forms.Button btnClear;
+        private System.Windows.Forms.Button btnSend;
+        private System.Windows.Forms.TextBox tbMsgSend;
+        private System.Windows.Forms.Label lblSend;
     }
 }

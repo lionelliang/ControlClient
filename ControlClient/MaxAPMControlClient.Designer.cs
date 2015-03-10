@@ -42,6 +42,8 @@
             this.btnException = new System.Windows.Forms.Button();
             this.ckbCss = new System.Windows.Forms.CheckBox();
             this.btnLog4J = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.btnClear = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // tbSQL
@@ -109,9 +111,11 @@
             // 
             // tbMsg
             // 
-            this.tbMsg.Location = new System.Drawing.Point(34, 335);
+            this.tbMsg.Location = new System.Drawing.Point(34, 230);
+            this.tbMsg.Multiline = true;
             this.tbMsg.Name = "tbMsg";
-            this.tbMsg.Size = new System.Drawing.Size(110, 21);
+            this.tbMsg.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.tbMsg.Size = new System.Drawing.Size(312, 110);
             this.tbMsg.TabIndex = 7;
             // 
             // ckbVar
@@ -173,11 +177,30 @@
             this.btnLog4J.UseVisualStyleBackColor = true;
             this.btnLog4J.Click += new System.EventHandler(this.btnVar_Click);
             // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(144, 25);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 21);
+            this.textBox1.TabIndex = 14;
+            this.textBox1.Text = "ip";
+            // 
+            // btnClear
+            // 
+            this.btnClear.Location = new System.Drawing.Point(309, 346);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(75, 23);
+            this.btnClear.TabIndex = 15;
+            this.btnClear.Text = "Clear";
+            this.btnClear.UseVisualStyleBackColor = true;
+            // 
             // MaxAPMControlClient
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(386, 368);
+            this.Controls.Add(this.btnClear);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.btnLog4J);
             this.Controls.Add(this.ckbCss);
             this.Controls.Add(this.btnException);
@@ -193,7 +216,7 @@
             this.Controls.Add(this.btnSQL);
             this.Controls.Add(this.tbSQL);
             this.Name = "MaxAPMControlClient";
-            this.Text = "MaxAPM Control Client";
+            this.Text = "lionel";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -215,6 +238,8 @@
         private System.Windows.Forms.Button btnException;
         private System.Windows.Forms.CheckBox ckbCss;
         private System.Windows.Forms.Button btnLog4J;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button btnClear;
     }
 }
 

@@ -81,6 +81,12 @@
     <Compile Include="WindowsServer.Designer.cs">
       <DependentUpon>WindowsServer.cs</DependentUpon>
     </Compile>
+    <Compile Include="WindowsThreadDump.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WindowsThreadDump.Designer.cs">
+      <DependentUpon>WindowsThreadDump.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -98,6 +104,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="WindowsServer.resx">
       <DependentUpon>WindowsServer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WindowsThreadDump.resx">
+      <DependentUpon>WindowsThreadDump.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

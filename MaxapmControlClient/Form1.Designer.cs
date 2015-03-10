@@ -31,10 +31,12 @@
             this.gpbContainer = new System.Windows.Forms.GroupBox();
             this.btnClient = new System.Windows.Forms.Button();
             this.btnServer = new System.Windows.Forms.Button();
+            this.btnThreadDump = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // gpbContainer
             // 
+            this.gpbContainer.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.gpbContainer.Location = new System.Drawing.Point(12, 81);
             this.gpbContainer.Name = "gpbContainer";
             this.gpbContainer.Size = new System.Drawing.Size(488, 458);
@@ -62,11 +64,23 @@
             this.btnServer.UseVisualStyleBackColor = true;
             this.btnServer.Click += new System.EventHandler(this.btnServer_Click);
             // 
+            // btnThreadDump
+            // 
+            this.btnThreadDump.Location = new System.Drawing.Point(207, 26);
+            this.btnThreadDump.Name = "btnThreadDump";
+            this.btnThreadDump.Size = new System.Drawing.Size(75, 23);
+            this.btnThreadDump.TabIndex = 3;
+            this.btnThreadDump.Text = "Thread Dump";
+            this.btnThreadDump.UseVisualStyleBackColor = true;
+            this.btnThreadDump.Click += new System.EventHandler(this.btnThreadDump_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.ClientSize = new System.Drawing.Size(525, 578);
+            this.Controls.Add(this.btnThreadDump);
             this.Controls.Add(this.btnServer);
             this.Controls.Add(this.btnClient);
             this.Controls.Add(this.gpbContainer);
@@ -82,6 +96,7 @@
         private System.Windows.Forms.GroupBox gpbContainer;
         private System.Windows.Forms.Button btnClient;
         private System.Windows.Forms.Button btnServer;
+        private System.Windows.Forms.Button btnThreadDump;
     }
 }
 

@@ -14,6 +14,7 @@ namespace MaxapmControlClient
     {
         public WindowsClient winclient;
         public WindowsServer winserver;
+        public WindowsThreadDump winthreaddump;
 
         public Form1()
         {
@@ -24,6 +25,11 @@ namespace MaxapmControlClient
         {
             winclient = new WindowsClient();
             winserver = new WindowsServer();
+            winthreaddump = new WindowsThreadDump(winclient);
+
+            winclient.Show();
+            gpbContainer.Controls.Clear();
+            gpbContainer.Controls.Add(winclient);
         }
 
         private void btnClient_Click(object sender, EventArgs e)
@@ -38,6 +44,13 @@ namespace MaxapmControlClient
             winserver.Show();
             gpbContainer.Controls.Clear();
             gpbContainer.Controls.Add(winserver);
+        }
+
+        private void btnThreadDump_Click(object sender, EventArgs e)
+        {
+            winthreaddump.Show();
+            gpbContainer.Controls.Clear();
+            gpbContainer.Controls.Add(winthreaddump);
         }
     }
 }
